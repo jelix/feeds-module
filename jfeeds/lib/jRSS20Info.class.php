@@ -113,9 +113,9 @@ class jRSS20Info extends jXMLFeedInfo {
      * @param SimpleXMLElement node representing the channel
      */
     public function setFromXML(SimpleXMLElement $channel){
-        
+
         $dt = new jDateTime();
-        
+
         $this->copyright =(string)$channel->copyright;
         $this->description = (string)$channel->description;
         $this->generator = (string)$channel->generator;
@@ -142,20 +142,24 @@ class jRSS20Info extends jXMLFeedInfo {
         $this->language = (string)$channel->language;
         $this->managingEditor = (string)$channel->managingEditor;
         $this->rating = (string)$channel->rating;
-        
+
         $categories = $channel->category;
         foreach ($categories as $cat) {
             $this->categories[] = (string)$cat;
         }
-        
-        $skipDays = $channel->skipDays;	
-        foreach ($skipDays->day as $day) {
-            $this->skipDays[] = (string)$day;
+
+        if (isset($channel->skipDays)) {
+            $skipDays = $channel->skipDays;
+            foreach ($skipDays->day as $day) {
+                $this->skipDays[] = (string)$day;
+            }
         }
-        
-        $skipHours = $channel->skipHours;	
-        foreach ($skipHours->hour as $hour) {
-            $this->skipHours[] = (string)$hour;
+
+        if (isset($channel->skipHours)) {
+            $skipHours = $channel->skipHours;
+            foreach ($skipHours->hour as $hour) {
+                $this->skipHours[] = (string)$hour;
+            }
         }
 
         $this->textInput['title'] = (string)$channel->textInput->title;

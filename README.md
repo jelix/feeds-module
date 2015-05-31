@@ -35,3 +35,4 @@ Usage
 
 See http://docs.jelix.org/en/manual-1.7/.
 
+Unit tests are in Testapp, in the jelix/jelix repository.
