@@ -10,6 +10,8 @@
 * @licence     GNU Lesser General Public Licence see LICENCE file or http://www.gnu.org/licenses/lgpl.html
 */
 
+require_once(__DIR__.'/jResponseXMLFeed.class.php');
+
 /**
 * Rss2.0 response
 * @link http://blogs.law.harvard.edu/tech/rss
