@@ -11,12 +11,12 @@
 abstract class jXMLFeedReader {
 
     /**
-    * @var jRSS20Info or jAtom10Info
+    * @var jXMLFeedInfo
     */
     protected $infos;
     
     /**
-    * @var array of jRSSItem or jAtom10Item
+    * @var jXMLFeedItem[]
     */
     protected $items;
     
@@ -36,18 +36,17 @@ abstract class jXMLFeedReader {
     */
     public function __construct($url){
 
-        try{
-            $stream = jHttp::quickGet($url);
-        } catch(Exception $e){
-            throw new jException('jfeeds~errors.xml.remote.feed.error');
-        }
-        
-        if(!$stream){
+        $client = new \GuzzleHttp\Client();
+        $res = $client->get($url);
+
+        if ( 200 !== $res->getStatusCode()) {
             throw new jException('jfeeds~errors.xml.remote.feed.error');
         }
 
+        $content = $res->getBody();
+
         libxml_use_internal_errors(true);
-        $xml = simplexml_load_string($stream);
+        $xml = simplexml_load_string($content);
                     
         if($xml === false){
             $errors = '';
@@ -63,7 +62,7 @@ abstract class jXMLFeedReader {
     }
 
     /**
-    * @return array of jXMLFeedInfo
+    * @return jXMLFeedInfo
     */
     public function getInfos() {
         if(!$this->_infos_analyzed){
@@ -74,7 +73,7 @@ abstract class jXMLFeedReader {
     }
 
     /**
-    * @return array of jXMLFeedItem
+    * @return jXMLFeedItem[]
     */
     public function getItems() {
         if(!$this->_items_analyzed){
