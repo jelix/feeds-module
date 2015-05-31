@@ -8,7 +8,7 @@
 * @licence     GNU Lesser General Public Licence see LICENCE file or http://www.gnu.org/licenses/lgpl.html
 */
 
-require_once(__DIR__.'/jResponseXMLFeed.class.php');
+require_once(__DIR__.'/jResponseXmlFeed.class.php');
 
 /**
 * Atom 1.0 response
