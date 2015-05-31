@@ -1,0 +1,40 @@
+{
+    "name": "jelix/feeds-module",
+    "type": "jelix-module",
+    "description": "module for Jelix, providing a RSS and ATOM responses and RSS/ATOM feed reader",
+    "keywords": ["feed", "rss", "atom"],
+    "homepage": "http://jelix.org",
+    "license": "LGPL-2.1",
+    "authors": [
+        {
+            "name":"Yannick Le Guédart"
+        },
+        {
+            "name": "Laurent Jouanneau",
+            "email": "laurent@jelix.org"
+        },
+        {
+            "name":"Loic Mathaud"
+        },
+        {
+            "name":"Sebastien Romieu"
+        },
+        {
+            "name":"Florian Lonqueu-Brochard"
+        }
+    ],
+    "require": {
+        "jelix/jhttp": "dev-master"
+    },
+    "minimum-stability": "stable",
+    "extra" : {
+        "jelix" : {
+            "modules": [
+                "jfeeds"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.7.x-dev"
+        }
+    }
+}
