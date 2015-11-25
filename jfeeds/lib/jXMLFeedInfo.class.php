@@ -52,7 +52,7 @@ abstract class jXMLFeedInfo {
     public $descriptionType='text';
     /**
      * date of the last update of the channel
-     * format : yyyy-mm-dd hh:mm:ss
+     * format : yyyy-mm-dd hh:mm:ss in the UTC +0000 timezone
      * @var string
      */
     public $updated;

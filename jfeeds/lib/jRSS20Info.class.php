@@ -32,7 +32,7 @@ class jRSS20Info extends jXMLFeedInfo {
     public $webMaster;
     /**
      * publication date
-     * format:  yyyy-mm-dd hh:mm:ss
+     * format:  yyyy-mm-dd hh:mm:ss in the UTC +0000 timezone
      * @var string
      */
     public $published;

@@ -62,13 +62,13 @@ class jRSS20Item extends jXMLFeedItem {
         $categorie = $item->category;
         foreach ($categorie as $cat) {
             $this->categories[] = (string)$cat;
-        }		
+        }
 
         $this->content = (string)$item->description;
         $this->id = (string)$item->guid;
         $this->link = (string)$item->link;
         
-        if((string)$item->pubDate != ''){
+        if ((string)$item->pubDate != '') {
             $dt->setFromString((string)$item->pubDate, jDateTime::RFC2822_FORMAT);
             $this->published = $dt->toString(jDateTime::DB_DTFORMAT);
         }

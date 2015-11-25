@@ -59,7 +59,7 @@ class jAtom10Item extends jXMLFeedItem {
     public $copyright;
     /**
      * date of the last update of the item
-     * date format is yyyy-mm-dd hh:mm:ss
+     * date format is yyyy-mm-dd hh:mm:ss in the UTC +0000 timezone
      * @var string
      */
     public $updated;
