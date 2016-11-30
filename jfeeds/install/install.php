@@ -16,11 +16,11 @@ class jfeedsModuleInstaller extends jInstallerModule {
             return;
         }
 
-        if (null == $this->entryPoint->getMainConfigIni()->getValue('rss2.0','responses', null, true)) {
-            $this->config->setValue('rss2.0','jfeeds~jResponseRss20','responses', null, true);
+        if (null == $this->entryPoint->getMainConfigIni()->getValue('rss2.0','responses')) {
+            $this->config->setValue('rss2.0','jfeeds~jResponseRss20','responses');
         }
-        if (null == $this->entryPoint->getMainConfigIni()->getValue('atom1.0','responses', null, true)) {
-            $this->config->setValue('atom1.0','jfeeds~jResponseAtom10','responses', null, true);
+        if (null == $this->entryPoint->getMainConfigIni()->getValue('atom1.0','responses')) {
+            $this->config->setValue('atom1.0','jfeeds~jResponseAtom10','responses');
         }
     }
 }
