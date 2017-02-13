@@ -43,7 +43,7 @@ abstract class jXMLFeedReader {
             throw new jException('jfeeds~errors.xml.remote.feed.error');
         }
 
-        $content = $res->getBody();
+        $content = (string) $res->getBody();
 
         libxml_use_internal_errors(true);
         $xml = simplexml_load_string($content);
