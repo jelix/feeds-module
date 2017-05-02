@@ -8,19 +8,19 @@
 
 /**
  */
-class jfeedsModuleInstaller extends jInstallerModule {
+class jfeedsModuleInstaller extends jInstallerModule2 {
 
-    function install() {
+    function installEntrypoint(jInstallerEntryPoint2 $entryPoint) {
 
         if (!$this->firstExec('config')) {
             return;
         }
 
-        if (null == $this->entryPoint->getMainConfigIni()->getValue('rss2.0','responses')) {
-            $this->config->setValue('rss2.0','jfeeds~jResponseRss20','responses');
+        if (null == $entryPoint->getConfigIni()->getValue('rss2.0','responses')) {
+            $this->getConfigIni()->setValue('rss2.0','jfeeds~jResponseRss20','responses');
         }
-        if (null == $this->entryPoint->getMainConfigIni()->getValue('atom1.0','responses')) {
-            $this->config->setValue('atom1.0','jfeeds~jResponseAtom10','responses');
+        if (null == $entryPoint->getConfigIni()->getValue('atom1.0','responses')) {
+            $this->getConfigIni()->setValue('atom1.0','jfeeds~jResponseAtom10','responses');
         }
     }
 }
