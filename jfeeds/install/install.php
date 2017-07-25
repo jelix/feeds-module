@@ -1,16 +1,16 @@
 <?php
 /**
 * @author      Laurent Jouanneau
-* @copyright   2015 Laurent Jouanneau
+* @copyright   2015-2017 Laurent Jouanneau
 * @link        http://www.jelix.org
 * @licence     GNU Lesser General Public Licence see LICENCE file or http://www.gnu.org/licenses/lgpl.html
 */
 
 /**
  */
-class jfeedsModuleInstaller extends jInstallerModule2 {
+class jfeedsModuleInstaller extends \Jelix\Installer\ModuleInstaller {
 
-    function installEntrypoint(jInstallerEntryPoint2 $entryPoint) {
+    function installEntrypoint(\Jelix\Installer\EntryPoint $entryPoint) {
 
         if (!$this->firstExec('config')) {
             return;

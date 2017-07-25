@@ -1,14 +1,14 @@
 This module for Jelix provides tools to read and generate RSS & ATOM feeds.
 
-This module is for Jelix 1.7.x and higher. See the jelix/jelix repository to see
-history of classes before Jelix 1.7.
+This module is for Jelix 2.0.x and higher. See the jelix/jelix repository to see
+history of classes before Jelix 2.0.
 
 
 Installation
 ============
 
 Install it by hands like any other Jelix modules, or use Composer if you installed
-Jelix 1.7+ with Composer.
+Jelix 2.0+ with Composer.
 
 In your project:
 
