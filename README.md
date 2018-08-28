@@ -16,17 +16,15 @@ In your project:
 composer require "jelix/feeds-module"
 ```
 
-Then declare the module into the configuration of your application
+Launch the configurator for your application to enabling the module
 
-```ini
-[modules]
-
-jfeeds.access=2
+```bash
+php yourapp/cmd.php module:configure jfeeds
 ```
 
-And then:
+And then launch the installer to activate the module
 
-```
+```bash
 php yourapp/cmd.php install
 ```
 
