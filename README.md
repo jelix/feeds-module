@@ -16,7 +16,7 @@ In your project:
 composer require "jelix/feeds-module"
 ```
 
-Launch the configurator for your application to enabling the module
+Launch the configurator for your application to enable the module
 
 ```bash
 php yourapp/cmd.php module:configure jfeeds
@@ -25,7 +25,7 @@ php yourapp/cmd.php module:configure jfeeds
 And then launch the installer to activate the module
 
 ```bash
-php yourapp/cmd.php install
+php yourapp/install/installer.php
 ```
 
 Usage
