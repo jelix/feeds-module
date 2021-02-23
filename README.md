@@ -19,13 +19,13 @@ composer require "jelix/feeds-module"
 Launch the configurator for your application to enable the module
 
 ```bash
-php yourapp/cmd.php module:configure jfeeds
+php dev.php module:configure jfeeds
 ```
 
 And then launch the installer to activate the module
 
 ```bash
-php yourapp/install/installer.php
+php install/installer.php
 ```
 
 Usage
