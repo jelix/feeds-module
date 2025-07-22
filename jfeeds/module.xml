@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module xmlns="http://jelix.org/ns/module/1.0">
     <info id="jfeeds@modules.jelix.org" name="jfeeds" createdate="2015-05-29">
-        <version date="2021-01-27">1.7.6</version>
+        <version date="2025-07-22">2.0.0-pre</version>
         <label lang="en_US">Feeds generator</label>
         <description lang="en_US"></description>
         <license URL="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPL 2.1</license>
-        <copyright>2015-2021 Laurent Jouanneau and other contributors</copyright>
+        <copyright>2015-2025 Laurent Jouanneau and other contributors</copyright>
         <creator name="Laurent Jouanneau" email="laurent@jelix.org"/>
         <homepageURL>http://jelix.org</homepageURL>
     </info>
+    <dependencies>
+        <jelix version="&gt;=1.10.0,&lt;=2.1.0"/>
+    </dependencies>
     <autoload>
         <class name="jAtom10Info" file="lib/jAtom10Info.class.php" />
         <class name="jAtom10Item" file="lib/jAtom10Item.class.php" />

@@ -59,8 +59,8 @@ abstract class jResponseXMLFeed extends jResponse {
      */
     function __construct (){
 
-        $this->charset  = jApp::config()->charset;
-        $this->lang     = jLocale::getCurrentLang();
+        $this->charset  = \Jelix\Core\App::config()->charset;
+        $this->lang     = \Jelix\Locale\Locale::getCurrentLang();
 
         parent::__construct ();
     }
