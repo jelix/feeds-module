@@ -13,37 +13,37 @@ abstract class jXMLFeedInfo {
      * title of the channel (only text, no html)
      * @var string
      */
-    public $title;
+    public $title = '';
     /**
      * url of the web site
      * @var string
      */
-    public $webSiteUrl;
+    public $webSiteUrl = '';
     /**
      * copyright
      * @var string
      */
-    public $copyright;
+    public $copyright = '';
     /**
      * list of category names
      * @var array
      */
-    public $categories=array();
+    public $categories = array();
     /**
      * the name of the generator
      * @var string
      */
-    public $generator='Jelix php framework http://jelix.org';
+    public $generator='Jelix php framework https://jelix.org';
     /**
      * url of the image channel
      * @var string
      */
-    public $image;
+    public $image = '';
     /**
      * description of the channel. could be pure text or html
      * @var string
      */
-    public $description;
+    public $description = '';
     /**
      * says the type of description : text or html (or xhtml for atom)
      * Values : 'text','html','xhtml'
@@ -55,7 +55,7 @@ abstract class jXMLFeedInfo {
      * format : yyyy-mm-dd hh:mm:ss in the UTC +0000 timezone
      * @var string
      */
-    public $updated;
+    public $updated = '';
 
 
     protected $_mandatory = array ();

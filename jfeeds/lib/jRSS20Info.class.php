@@ -19,23 +19,23 @@ class jRSS20Info extends jXMLFeedInfo {
      * lang of the channel
      * @var string
      */
-    public $language;
+    public $language = '';
     /**
      * email of the content manager
      * @var string
      */
-    public $managingEditor;
+    public $managingEditor = '';
     /**
      * email of technical responsible
      * @var string
      */
-    public $webMaster;
+    public $webMaster = '';
     /**
      * publication date
      * format:  yyyy-mm-dd hh:mm:ss in the UTC +0000 timezone
      * @var string
      */
-    public $published;
+    public $published = '';
     /**
      * specification url
      * example : http://blogs.law.harvard.edu/tech/rss
@@ -46,63 +46,63 @@ class jRSS20Info extends jXMLFeedInfo {
      * not implemented
      * @var string
      */
-    public $cloud; // indicates a webservice from which the user can register to the server
+    public $cloud = array(); // indicates a webservice from which the user can register to the server
                   // to be aware of modifications
                   //=array('domain'=>'','path'=>'','port'=>'','registerProcedure'=>'', 'protocol'=>'');
     /**
      * time to live of the cache, in minutes
      * @var string
      */
-    public $ttl;
+    public $ttl = '';
     /**
      * image title
      * @var string
      */
-    public $imageTitle;
+    public $imageTitle = '';
     /**
      * web site url corresponding to the image
      * @var string
      */
-    public $imageLink;
+    public $imageLink = '';
     /**
      * width of the image
      * @var string
      */
-    public $imageWidth;
+    public $imageWidth = '';
     /**
      * height of the image
      * @var string
      */
-    public $imageHeight;
+    public $imageHeight = '';
     /**
      * Description of the image (= title attribute for the img tag)
      * @var string
      */
-    public $imageDescription;
+    public $imageDescription = '';
 
     /**
      * Pics rate for this channel
      * @var string
      */
-    public $rating;
+    public $rating = '';
     /**
      * field form for the channel
      * it is an array('title'=>'','description'=>'','name'=>'','link'=>'')
      * @var array
      */
-    public $textInput;
+    public $textInput = array();
     /**
      * list of hours that agregator should ignore
      * ex (10, 21)
      * @var array
      */
-    public $skipHours;
+    public $skipHours = array();
     /**
      * list of day that agregator should ignore
      * ex ('monday', 'tuesday')
      * @var array
      */
-    public $skipDays;
+    public $skipDays = array();
 
     function __construct () {
             $this->_mandatory = array ( 'title', 'webSiteUrl', 'description');

@@ -17,12 +17,12 @@ class jAtom10Info extends jXMLFeedInfo {
      * unique id of the channel
      * @var string
      */
-    public $id;
+    public $id = '';
     /**
      * channel url
      * @var string
      */
-    public $selfLink;
+    public $selfLink = '';
     /**
      * author's list
      * each author is an array('name'=>'','email'=>'','uri'=>'')
@@ -45,20 +45,20 @@ class jAtom10Info extends jXMLFeedInfo {
      * icon url
      * @var string
      */
-    public $icon;
+    public $icon = '';
 
     /**
      * version of the generator
      * @var string
      * @see $generator
      */
-    public $generatorVersion;
+    public $generatorVersion = '';
     /**
      * url of the generator
      * @var string
      * @see $generator
      */
-    public $generatorUrl;
+    public $generatorUrl = '';
 
     function __construct ()
     {

@@ -20,28 +20,28 @@ class jRSS20Item extends jXMLFeedItem {
      * comments url
      * @var string
      */
-    public $comments;
+    public $comments = '';
     /**
      * media description, attached to the item
      * the array should contain this keys :  'url', 'size', 'mimetype'
      * @var array
      */
-    public $enclosure;
+    public $enclosure = array();
     /**
      * says if the id is a permanent link
      * @var boolean
      */
-    public $idIsPermalink;
+    public $idIsPermalink = false;
     /**
      * url of  rss channel of the information source
      * @var string
      */
-    public $sourceUrl;
+    public $sourceUrl = '';
     /**
      * Title of the information source
      * @var string
      */
-    public $sourceTitle;
+    public $sourceTitle = '';
     
     /**
      * fill item with the given xml node

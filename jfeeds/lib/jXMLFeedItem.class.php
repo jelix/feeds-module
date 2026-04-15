@@ -13,33 +13,33 @@ abstract class jXMLFeedItem {
      * identifiant of the item (its url for example)
      * @var string
      */
-    public $id;
+    public $id = '';
     /**
      * title
      * @var string
      */
-    public $title;
+    public $title = '';
     /**
      * url of the item
      * @var string
      */
-    public $link;
+    public $link = '';
     /**
      * publication date of the item
      * format : yyyy-mm-dd hh:mm:ss in the UTC +0000 timezone
      * @var string
      */
-    public $published;
+    public $published = '';
     /**
      * author name
      * @var string
      */
-    public $authorName;
+    public $authorName = '';
     /**
      * author email
      * @var string
      */
-    public $authorEmail;
+    public $authorEmail = '';
     /**
      * list of category names
      * @var array
@@ -49,7 +49,7 @@ abstract class jXMLFeedItem {
      * content of the item.  could be pure text or html
      * @var string
      */
-    public $content;
+    public $content = '';
     /**
      * says the type of content : text or html (or xhtml for atom)
      * Values : 'text','html','xhtml'

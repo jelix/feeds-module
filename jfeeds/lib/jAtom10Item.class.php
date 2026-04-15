@@ -17,7 +17,7 @@ class jAtom10Item extends jXMLFeedItem {
      * the url of the main author
      * @var string
      */
-    public $authorUri;
+    public $authorUri = '';
     /**
      * list of other authors
      * each author is an array('name'=>'','email'=>'','uri'=>'')
@@ -40,29 +40,29 @@ class jAtom10Item extends jXMLFeedItem {
      * summary of the content
      * @var string
      */
-    public $summary;
+    public $summary = '';
     /**
      * type of the summary
      * possible values are 'text', 'html', 'xhtml'
      * @var string
      */
-    public $summaryType;
+    public $summaryType = '';
     /**
      * atom content of the source of the item
-     * @var xml
+     * @var string
      */
-    public $source;
+    public $source = '';
     /**
      * Copyright
      * @var string
      */
-    public $copyright;
+    public $copyright = '';
     /**
      * date of the last update of the item
      * date format is yyyy-mm-dd hh:mm:ss in the UTC +0000 timezone
      * @var string
      */
-    public $updated;
+    public $updated = '';
     
     /**
      * fill item with the given xml node
