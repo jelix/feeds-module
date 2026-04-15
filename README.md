@@ -31,6 +31,6 @@ php install/installer.php
 Usage
 =====
 
-See http://docs.jelix.org/en/manual-1.7/.
+See http://docs.jelix.org/en/manual-1.8/.
 
 Unit tests are in Testapp, in the jelix/jelix repository.

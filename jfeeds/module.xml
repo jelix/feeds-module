@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module xmlns="http://jelix.org/ns/module/1.0">
     <info id="jfeeds@modules.jelix.org" name="jfeeds" createdate="2015-05-29">
-        <version date="2021-01-27">1.7.6</version>
+        <version date="2026-04-15">1.7.7</version>
         <label lang="en_US">Feeds generator</label>
         <description lang="en_US"></description>
         <license URL="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPL 2.1</license>
-        <copyright>2015-2021 Laurent Jouanneau and other contributors</copyright>
+        <copyright>2015-2026 Laurent Jouanneau and other contributors</copyright>
         <creator name="Laurent Jouanneau" email="laurent@jelix.org"/>
         <homepageURL>http://jelix.org</homepageURL>
     </info>
